@@ -1,37 +1,37 @@
 const productos = [
   {
     nombre: "Café Caramel con Chocolate",
-    precio: 59.9,
+    precio: 3.90,
     imagen: "cafe_01",
     categoriaId: 1,
   },
   {
     nombre: "Café Frio con Chocolate Grande",
-    precio: 49.9,
+    precio: 3.90,
     imagen: "cafe_02",
     categoriaId: 1,
   },
   {
     nombre: "Latte Frio con Chocolate Grande",
-    precio: 54.9,
+    precio: 3.90,
     imagen: "cafe_03",
     categoriaId: 1,
   },
   {
     nombre: "Latte Frio con Chocolate Grande",
-    precio: 54.9,
+    precio: 3.90,
     imagen: "cafe_04",
     categoriaId: 1,
   },
   {
     nombre: "Malteada Fria con Chocolate Grande",
-    precio: 54.9,
+    precio: 3.90,
     imagen: "cafe_05",
     categoriaId: 1,
   },
   {
     nombre: "Café Mocha Caliente Chico",
-    precio: 39.9,
+    precio: 3.90,
     imagen: "cafe_06",
     categoriaId: 1,
   },
