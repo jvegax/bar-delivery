@@ -1,9 +1,12 @@
 import Head from "next/head";
-import React from "react";
+import React, { memo } from "react";
 import Sidebar from "../components/Sidebar";
 import CustomModal from "../components/CustomModal";
 import Modal from "react-modal";
 import useKiosko from "../hooks/useKiosko";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Pasos from "../components/Pasos";
 
 const customStyles = {
   content: {
@@ -31,19 +34,20 @@ const Layout = ({ children, pagina }) => {
           <Sidebar />
         </aside>
         <main className="md:w-8/12 xl:w-3/4 2xl:w-4/5 h-screen overflow-y-scroll">
-          <div className="p-10">{children}</div>
+          <div className="p-10">
+            <Pasos />
+            {children}
+          </div>
         </main>
       </div>
       {modal && (
-        <Modal
-          isOpen={modal}
-          style={customStyles}
-        >
+        <Modal isOpen={modal} style={customStyles}>
           <CustomModal />
         </Modal>
       )}
+      <ToastContainer />
     </>
   );
 };
 
-export default Layout;
+export default memo(Layout);

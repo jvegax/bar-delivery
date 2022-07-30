@@ -44,7 +44,7 @@ const CustomModal = () => {
         />
       </div>
       <div className="md:w-2/3">
-        <div clasName="flex justify-end">
+        <div className="flex justify-end">
           <button onClick={handleSetModal}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ const CustomModal = () => {
         </div>
         <button
           onClick={() => {
-            const newPedido = { id, cantidad, precio, nombre };
+            const newPedido = { id, cantidad, precio, nombre, imagen };
             handleSetPedido(newPedido);
             handleSetModal();
           }}
