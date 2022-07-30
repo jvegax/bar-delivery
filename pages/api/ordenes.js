@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   const prisma = new PrismaClient();
 
   if (req.method === "POST") {
-    const nuevaOrden = await prisma.order.create({
+    const nuevaOrden = await prisma.orden.create({
       data: {
         orden: req.body.pedido,
         fecha: req.body.fecha,
@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     res.json(nuevaOrden);
   }
   if (req.method === "GET") {
-    const orders = await prisma.order.findMany();
+    const orders = await prisma.orden.findMany();
     res.status(200).json(orders);
   }
 }

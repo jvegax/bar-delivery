@@ -26,7 +26,7 @@ model Category {
   productos Product[]
 }
 
-model Order {
+model Orden {
   id     Int    @id @default(autoincrement())
   nombre String
   fecha  String
